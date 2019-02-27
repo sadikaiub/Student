@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVCAPP.Migrations
 {
     [DbContext(typeof(StudentDbContext))]
-    [Migration("20190227165434_Student_Table_Email_Add_New")]
-    partial class Student_Table_Email_Add_New
+    [Migration("20190227173838_Student_Table_Create")]
+    partial class Student_Table_Create
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -35,6 +35,8 @@ namespace MVCAPP.Migrations
                     b.Property<string>("LastName");
 
                     b.Property<string>("MiddleName");
+
+                    b.Property<int>("PhoneNo");
 
                     b.HasKey("Id");
 

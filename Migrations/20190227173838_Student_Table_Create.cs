@@ -15,7 +15,9 @@ namespace MVCAPP.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     FirstName = table.Column<string>(nullable: false),
                     MiddleName = table.Column<string>(nullable: true),
-                    LastName = table.Column<string>(nullable: true)
+                    LastName = table.Column<string>(nullable: true),
+                    Email = table.Column<string>(nullable: false),
+                    PhoneNo = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

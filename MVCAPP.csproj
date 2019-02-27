@@ -5,6 +5,16 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Migrations\20190227160411_Student_Table_Create.cs" />
+    <Compile Remove="Migrations\20190227165434_Student_Table_Email_Add_New.cs" />
+    <Compile Remove="Migrations\20190227171640_Email_Add.cs" />
+    <Compile Remove="Migrations\20190227172152_Student_Table_PhonNo_Add.cs" />
+    <Compile Remove="Migrations\20190227172344_Student_Table_PhonNo_Add.cs" />
+    <Compile Remove="Migrations\20190227173203_Student_Table_PhonNo.cs" />
+    <Compile Remove="Migrations\20190227173346_AddPhoneNo.cs" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="bootstrap" Version="3.3.7" />

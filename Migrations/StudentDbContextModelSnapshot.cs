@@ -34,6 +34,8 @@ namespace MVCAPP.Migrations
 
                     b.Property<string>("MiddleName");
 
+                    b.Property<int>("PhoneNo");
+
                     b.HasKey("Id");
 
                     b.ToTable("Students");
