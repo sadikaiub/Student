@@ -1,0 +1,53 @@
+﻿@model Student
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap-grid.css" rel="stylesheet" />
+</head>
+<body>
+    <form asp-action="Create" asp-controller="Student">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group row">
+                        <label asp-for="FirstName" class="col-md-3"></label>
+                        <div class="col-md-9 ">
+                            <input type="text" asp-for="FirstName" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="MiddleName" class="col-md-3"></label>
+                        <div class="col-md-9 ">
+                            <input type="text" asp-for="MiddleName" class="form-control" />
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row">
+                        <label asp-for="LastName" class="col-md-3"></label>
+                        <div class="col-md-9 ">
+                            <input type="text" asp-for="LastName" class="form-control" />
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="Email" class="col-md-3"></label>
+                        <div class="col-md-9 ">
+                            <input type="text" asp-for="Email" class="form-control" />
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Save" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+</body>
+</html>
